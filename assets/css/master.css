@@ -5,6 +5,7 @@
   padding: 0;
 }
 body {
+  font-family: 'Arial', sans-serif;
   height: 100vh;
 }
 /*classe per centrare e dimensionare
@@ -32,9 +33,9 @@ e metto un padding */
 }
 /* altezza per debug, disabilita
 quando fai Milestone 2*/
-header [class^="colonna-"] > div {
+/* header [class^="colonna-"] > div {
   height: 100px;
-}
+} */
 #gallery [class^="colonna-"] > div {
   height: 300px;
 }
@@ -87,4 +88,13 @@ footer [class^="colonna-"] > div {
 /*utility per margini*/
 .mt-10 {
   margin-top: 10px;
+}
+/*classi per immagini*/
+.logo img{
+  height: 3em;
+  border-right: 1px solid #cecece;
+  padding-right: 1em;
+}
+.logo {
+
 }
