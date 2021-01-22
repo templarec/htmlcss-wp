@@ -46,9 +46,9 @@ quando fai Milestone 2*/
 #articles [class^="colonna-"] > div{
   height: 300px;
 } */
-footer [class^="colonna-"] > div {
+/* footer [class^="colonna-"] > div {
   height: 100px;
-}
+} */
 /*end debug */
 /*classi utility per larghezza colonne*/
 .colonna-100 {
@@ -60,7 +60,7 @@ footer [class^="colonna-"] > div {
 .colonna-50 {
   width: 50%;
 }
-/*utility per colore sfondo contenuti*/
+/*utility per colore sfondo contenuti solo per Milestone 1*/
 .bg-pink {
   background-color: #E579E6;
 }
@@ -96,7 +96,6 @@ footer [class^="colonna-"] > div {
 .mt-10 {
   margin-top: 10px;
 }
-
 /*classi per immagini*/
 .logo img{
   height: 3em;
@@ -113,18 +112,27 @@ footer [class^="colonna-"] > div {
   border-radius: 20px;
   height: 40em;
   color: #cecece;
-  }
-  [class^="bg-"]{
-
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+}
+/* Sfondo grigio per la opacity */
+[class^="bg-"]{
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .leadership {
   background-color: #fff;
 }
+/* Altezze fisse per riga immagini */
 .bg-center img, .bg-left img, .bg-right img {
   width: 100%;
-  height: auto;
+  height: 180px;
   opacity: 50%;
-
+}
+/* sezione footer */
+.footer span:after{
+  content: " \2764";
+  color: #f00;
+}
+.footer {
+  font-size: 1em;
+  text-align: center;
 }
