@@ -36,9 +36,9 @@ quando fai Milestone 2*/
 /* header [class^="colonna-"] > div {
   height: 100px;
 } */
-#gallery [class^="colonna-"] > div {
+/* #gallery [class^="colonna-"] > div {
   height: 300px;
-}
+} */
 #articles [class^="colonna-"]:first-child > div{
   height: 50px;
 }
@@ -89,12 +89,20 @@ footer [class^="colonna-"] > div {
 .mt-10 {
   margin-top: 10px;
 }
+
 /*classi per immagini*/
 .logo img{
   height: 3em;
   border-right: 1px solid #cecece;
   padding-right: 1em;
 }
-.logo {
-
+.navbar {
+  font-weight: 300;
 }
+.jumbo {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  height: 55.5em;
+  }
