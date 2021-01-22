@@ -1,0 +1,90 @@
+/* selettori generali*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+/*classe per centrare e dimensionare
+la pagina*/
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+/*margine riga per compensare il
+padding colonne*/
+.riga{
+  margin: 0 -10px;
+}
+/*selettore per clearfix*/
+.riga:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* flotto tutte le colonne a sx
+e metto un padding */
+[class^="colonna-"] {
+  float: left;
+  padding: 10px;
+}
+/* altezza per debug, disabilita
+quando fai Milestone 2*/
+header [class^="colonna-"] > div {
+  height: 100px;
+}
+#gallery [class^="colonna-"] > div {
+  height: 300px;
+}
+#articles [class^="colonna-"]:first-child > div{
+  height: 50px;
+}
+#articles [class^="colonna-"] > div{
+  height: 300px;
+}
+footer [class^="colonna-"] > div {
+  height: 100px;
+}
+/*end debug */
+/*classi utility per larghezza colonne*/
+.colonna-100 {
+  width: 100%;
+}
+.colonna-20 {
+  width: 20%;
+}
+.colonna-60 {
+  width: 60%;
+}
+/*utility per colore sfondo contenuti*/
+.bg-pink {
+  background-color: #E579E6;
+}
+.bg-yellow {
+  background-color: #E1D67A;
+}
+.bg-cyan {
+  background-color: #ABCFE7;
+}
+.bg-blue {
+  background-color: #0186FD;
+}
+.bg-purple {
+  background-color: #8801FE;
+}
+/*utility padding per colonne*/
+.pt-0 {
+  padding-top: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+/*utility per margini*/
+.mt-10 {
+  margin-top: 10px;
+}
