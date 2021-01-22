@@ -30,6 +30,7 @@ e metto un padding */
 [class^="colonna-"] {
   float: left;
   padding: 10px;
+  /* border: 1px solid black; */
 }
 /* altezza per debug, disabilita
 quando fai Milestone 2*/
@@ -53,11 +54,11 @@ footer [class^="colonna-"] > div {
 .colonna-100 {
   width: 100%;
 }
-.colonna-20 {
-  width: 20%;
+.colonna-25 {
+  width: 25%;
 }
-.colonna-60 {
-  width: 60%;
+.colonna-50 {
+  width: 50%;
 }
 /*utility per colore sfondo contenuti*/
 .bg-pink {
@@ -113,6 +114,17 @@ footer [class^="colonna-"] > div {
   height: 40em;
   color: #cecece;
   }
+  [class^="bg-"]{
+
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 .leadership {
   background-color: #fff;
+}
+.bg-center img, .bg-left img, .bg-right img {
+  width: 100%;
+  height: auto;
+  opacity: 50%;
+
 }
